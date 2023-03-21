@@ -13,7 +13,7 @@ const name = config.name;
 //archivos estaticos busca  el archivo  htlm
 app.use(express.static(path.join(__dirname, './public')));
 
-const url = `mongodb+srv://${name}:${api}@cluster0.kpp1aja.mongodb.net/sorteo`;
+const url = `mongodb+srv://${name}:${api}@clusternew.psbrnar.mongodb.net/sorteo`;
 
 // configuracion para evitar fallo de coneccion
 mongoose.Promise = global.Promise;
