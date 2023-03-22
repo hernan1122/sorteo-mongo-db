@@ -170,8 +170,8 @@ function sorteoDos(input, agregar, ganador, jugadores) { //agregamos
 };
 
 /* ########################################## */
-/* const apiPatch = 'https://deploy-sorteo-db-production-d3f8.up.railway.app/api/update/' */
-const apiPatch = 'http://localhost:3000/api/update/'
+const apiPatch = 'https://sorteo-mongo-db-production.up.railway.app/api/update/'
+/* const apiPatch = 'http://localhost:3000/api/update/' */
 async function updateData(id, nombre, amount) {
   const response = await fetch(apiPatch + id, {
     method: 'PATCH',
@@ -191,8 +191,8 @@ async function updateData(id, nombre, amount) {
 /* ########################################## */
 
 //funcion para agregar a la base de datos
-/* const api = 'https://deploy-sorteo-db-production-d3f8.up.railway.app/api/sorteo' */
-const api = 'http://localhost:3000/api/sorteo'
+const api = 'https://sorteo-mongo-db-production.up.railway.app/api/sorteo'
+/* const api = 'http://localhost:3000/api/sorteo' */
 async function postData(name, repeat) {
   const response = await fetch(api, {
     method: 'POST',
